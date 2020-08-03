@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="toolbar">
+        <div class="tools">
+            <!-- 画笔 -->
+            <span href="javascript:;" class="btn iconfont iconpencil" data-type="line"></span>
+        </div>
+
+        <div class="operate">
+            <!-- 撤销 -->
+            <span href="javascript:;" class="btn iconfont iconrevoke"></span>
+            <!-- 清除 -->
+            <span href="javascript:;" class="btn iconfont iconclear"></span>
+        </div>
+        <!-- 颜色：先用几块 -->
+        <ul class="colors">
+            <li class="color active" style="background: #000000;"></li>
+            <li class="color" style="background: #ffffff;"></li>
+            <li class="color" style="background: #ff0000;"></li>
+            <li class="color" style="background: #ff3300;"></li>
+            <li class="color" style="background: #ff6600;"></li>
+            <li class="color" style="background: #ff9900;"></li>
+            <li class="color" style="background: #ffff00;"></li>
+            <li class="color" style="background: #99ff00;"></li>
+            <li class="color" style="background: #00ff00;"></li>
+            <li class="color" style="background: #00ffff;"></li>
+            <li class="color" style="background: #0000ff;"></li>
+            <li class="color" style="background: #6600ff;"></li>
+            <li class="color" style="background: #ff00ff;"></li>
+            <li class="color" style="background: #ff0066;"></li>
+        </ul>
+        <a href="javascript:;" id="down" title="下载" class="down btn iconfont icondown"></a>
+    </div>
+    <canvas id="panel" class="panel" style="width:100%;height:100%">
+    </canvas>
+
+    <script src="./js/tool.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
